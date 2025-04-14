@@ -1,0 +1,20 @@
+#Day 1 Problem 
+#
+
+#solution
+def count_tallest(candles):
+    tallest = 0
+    count = 0
+
+    for height in candles:
+        if height > tallest:
+            tallest = height
+            count = 1  # Reset count for a new tallest candle
+        elif height == tallest:
+            count += 1  # Increment count if another tallest candle is found
+            
+    return count
+
+candles = list(map(int, input("Enter the height of the candles, space-separated: ").split()))
+
+print("Number of tallest candles is:", count_tallest(candles))
