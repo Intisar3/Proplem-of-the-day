@@ -1,5 +1,22 @@
 #Day 1 Problem 
-#
+
+"""
+Count how many candles are the tallest
+candles = [4,1,4,3] >> the tallest candles are 4 unit hight, there are 2 candles with this hight
+(return the number of candles that are tallest)
+
+Sample input:
+4 4 1 3 4
+3 2 1 3 
+1 2 3 4 5 5
+7
+
+Sample output:
+3
+2
+2
+1
+"""
 
 #solution
 def count_tallest(candles):
@@ -17,4 +34,36 @@ def count_tallest(candles):
 
 candles = list(map(int, input("Enter the height of the candles, space-separated: ").split()))
 
-print("Number of tallest candles is:", count_tallest(candles))
+print("Number of tallest candles is:", count_tallest(candles)) 
+
+
+"""
+
+1) Initialize Variables:
+
+tallest = 0: Start with the assumption that no candle is the tallest (height 0).
+
+count = 0: We haven't counted any tallest candles yet, so initialize to 0.
+
+2) Iterate Through Candle Heights:
+
+for height in candles:: Loop through each candle's height in the list of candles.
+
+Check if Current Candle is Taller:
+
+if height > tallest:: If the current candle is taller than the current tallest, update the tallest.
+
+tallest = height: Update tallest to the new height.
+
+count = 1: Reset the count to 1 since we've found a new tallest candle.
+
+3) Check if Current Candle Equals Tallest:
+
+elif height == tallest:: If the current candle has the same height as the tallest one.
+
+count += 1: Increment the count because we found another candle of the same tallest height.
+
+Return the Result:
+
+return count: After looping through all candles, return the count of the tallest candles.
+"""
