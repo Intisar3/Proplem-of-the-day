@@ -32,6 +32,8 @@ Algorithm:
 input:
 white
 black
+totalBalls = white + black
+initial hight
 
 output:
 max height possible
