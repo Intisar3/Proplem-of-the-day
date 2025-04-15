@@ -1,0 +1,51 @@
+
+"""
+Given two integers white and black representing the count of white and black balls,
+return the maximum height of the triangle that can be achieved.
+
+(Note: each row should have the same color)
+
+Ex 1:
+input: white = 4
+black = 2
+output = 3
+
+
+Ex 2:
+input: black = 2
+white = 1
+output = 2
+
+
+
+Ex 3:
+input: black = 1
+white = 1
+output = 1
+
+
+"""
+
+"""
+Algorithm:
+
+input:
+white
+black
+
+output:
+max height possible
+
+condition:
+only one color can be in one row
+
+
+نجرب الارتفاع من 1 فأكثر ونسأل في كل مرة، هل نقدر نبني مثلث بهذا الارتفاع؟ يعني هل عدد الكرات المتوفرة يكفي؟
+إذا نقدر -- نزيد الاتفاع ب 1
+إذا ما نقدر -- نوقف وبالتالي نفهم أننا وصلنا لأقصى ارتفاع ممكن لهذا المثلث في قيمة الارتفاع السابق
+"""
+
+"""
+
+"""
+
